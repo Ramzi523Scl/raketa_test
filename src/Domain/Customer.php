@@ -1,18 +1,19 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace Raketa\BackendTestTask\Domain;
 
 final readonly class Customer
 {
     public function __construct(
-        private int $id,
+        private int    $id,
         private string $firstName,
         private string $lastName,
         private string $middleName,
         private string $email,
-    ) {
+    )
+    {
     }
 
     public function getId(): int

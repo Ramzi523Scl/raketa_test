@@ -1,21 +1,22 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
-namespace Raketa\BackendTestTask\Repository\Entity;
+namespace Raketa\BackendTestTask\Domain;
 
-readonly class Product
+final readonly class Product
 {
     public function __construct(
-        private int $id,
+        private int    $id,
         private string $uuid,
-        private bool $isActive,
+        private bool   $isActive,
         private string $category,
         private string $name,
         private string $description,
         private string $thumbnail,
-        private float $price,
-    ) {
+        private float  $price
+    )
+    {
     }
 
     public function getId(): int
